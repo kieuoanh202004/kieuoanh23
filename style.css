@@ -1,0 +1,287 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    cursor: pointer;
+}
+
+#wrapper{
+    /*kt man hinh*/
+    width: 100%;
+    height: 100vh;
+}
+#header{
+    width: 100%;
+    padding: 0px 30px;
+    margin-top: 33px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu{
+    list-style: none;
+    display: flex;
+}
+#menu .item{
+    margin: 0px 25px;
+}
+#menu .item a{/* maumenu*/
+    color:#f51c20;
+    text-decoration: none;
+}
+
+#action{
+    display: flex;
+}
+#action .item{/* nguoidunggiohang*/
+    margin-left: 42px;
+}
+
+
+#banner{/* chèn hình nền*/
+    width:100%;
+    background-image: url(img/banner\ 5.jpg);
+    height:463px;
+    margin-top: 40px;
+    display: flex;
+    padding:  0px 133px;
+    position: relative;
+}
+#banner .box-left ,#banner .box-right{
+    width: 50%;
+}
+
+#banner .box-left h2{/* thuong hang ...*/
+    font-size: 38px;
+    margin-top: 65px;
+    color: #065f56;
+}    
+
+#banner .box-left p{
+    color: #145706;
+}
+#banner .box-left button{/* mua ngay*/
+    width:191px;
+    height:40px;
+    margin-top: 41px;
+    background: #1d1a1a;
+    border: none;
+    outline:none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 0.4s;
+
+}
+
+#banner .box-left button:hover{
+    background: rgb(9, 83, 126);
+}
+
+#banner .box-right{
+    padding-left: 200px;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+}
+#banner .box-right img{
+    margin: 0px 10px;
+    animation: animation 3s infinite linear;
+}
+#baner .box-right img:nth-child(1){
+    animation-delay: 0.5s
+}
+#baner .box-right img:nth-child(2){
+    animation-delay: 1s;
+}
+@keyframes animation {/* hiệu ứng cho 3 ảnh bên phải*/
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.to-bottom{/* hình dấu mũi tên xuống dưới cho ra giữa*/
+    position: absolute;
+    bottom: -40px;
+    left:50%;
+    transform: translateX(-50%);
+}
+#wp-products{/* chỉnh khoảng cách của sản phẩm*/
+    padding-top: 116px;
+    padding-bottom: 78px;
+    padding-left: 134px;
+    padding-right: 134px;
+}
+
+#wp-products h2{/* phần chữ của sp*/
+    text-align: center;
+    margin-bottom: 76px;
+    font-size:32px;
+    color:#626a67;
+}
+
+#list-products{/* 3 hình sản phẩm chung 1 hàng*/
+    display:flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#list-products .item{/* bao khung và tô màu bên ngoài sp*/
+    width:290px;
+    height:374px;
+    background: #362f2f;
+    border-radius: 20px;
+    margin-bottom: 60px;
+}
+
+#list-products .item img{
+    display:block;
+    margin:0px auto;
+    margin-top: 17px;
+}
+
+#list-products .item .stars{ 
+    display: flex;
+    margin:0px auto;
+    width:90%;
+}
+
+#list-products .item .name{
+    text-align: center;
+    color: #f794b0;
+    font-weight: bold;
+    margin-top: 21px;
+}
+#list-products .item .desc{/*tên món ăn*/
+    text-align: center;
+    color:#185c61;
+}
+
+#list-products .item .price{/*giá*/
+    text-align: center;
+    color:#cf0606;
+    font-weight: bold;
+    margin-top:20px;
+}
+.list-page{/* chỉnh ra giữa*/
+    width: 50%;
+    margin: 0px auto;
+}
+.list-page{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+}
+.list-page .item{/*ô tròn */
+    margin: 0px 20px;
+    width: 37px;
+    height: 37px;
+    background: #362f2f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-page .item a{ /* số trong chữ*/
+    color: #fff;
+    text-decoration: none;
+}
+#saleoff{
+    width:100%;
+    display:flex;
+    height:322px;
+}
+#saleoff .box-left ,#saleoff .box-right{
+    width: 50%;
+}
+#saleoff .box-left{
+    background: #3e413e;
+    text-align:  center;
+    min-height: 322px;
+
+}
+
+#saleoff .box-left h1{
+    padding-top: 38px;
+}
+#saleoff .box-left span:nth-child(1)
+{
+    color:#fff;
+    font-size:50px;
+}
+#saleoff .box-left span:nth-child(2)
+{
+    color:orange;
+    font-size:128px;
+}
+#saleoff ,box-right{
+    background-image: url("img/combo2.jpg");
+    width:1150px;
+    height: 380px;
+}
+#footer{
+    width: 100%;
+    background: #fcfaf9;
+    height: 322px;
+    margin-top: 100px;
+    padding: 0px 63px;
+    padding-top: 57px;
+    display: flex;
+    justify-content: space-around;
+}
+#footer .box{
+    width: 150px;
+}
+
+#footer .box .quick-menu{
+    margin-top:40px;
+}
+#footer .box .quick-menu .item{
+    margin-bottom: 12px;
+}
+#footer .box .quick-menu .item a{
+    color : rgb(243, 118, 118);
+    text-decoration: none;
+}
+
+
+#footer .box form input{
+    width:294px;
+    height:42px;
+    background: transparent;
+    padding-left:20px;
+    color:#b17a7a;
+}
+ #footer .box form button{
+    background: #f8eee6;
+    box-shadow: 5px 5px 4px rgb(113, 112, 112);
+    width:163px;
+    height: 38px;
+    margin-top: 29px;
+    color:#543232;
+ }
+ #home{
+    text-align: center;
+    color: #f42424;
+ }
+
+ .related-products{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2en;
+    border-bottom: 1px dotted red;
+    font-weight: bold;
+ }
+ .product-detall-info{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:2en;
+    padding: 10px;
+    margin-left: 20px;
+ }
